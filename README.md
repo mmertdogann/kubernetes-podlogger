@@ -1,8 +1,6 @@
  # kubernetes-podlogger
 
-Two golang app (client-server) to monitor kubernetes pods inside their namespaces and communicate with each other when pod events occur
-
-<br>
+Two seperate golang app (client-server) to monitor kubernetes pods inside their namespaces and communicate with each other when pod events occur
 
 ## Technologies
 
@@ -14,8 +12,6 @@ The project has been created using these technologies:
 * **client-go** for talking to a kubernetes cluster
 * **ws** tiny websocket library for Golang
 
-<br>
-
 ## Setup & Installtion
 
 **Install:**
@@ -24,8 +20,6 @@ The project has been created using these technologies:
 2. `Docker` from <a href="https://docs.docker.com/get-docker/">here</a> then enable kubernetes
 3. `kubectl` from <a href="https://kubernetes.io/docs/tasks/tools/">here</a>
 4. `helm` from <a href="https://helm.sh/docs/intro/install/">here</a>
-
-<br>
 
 ## Running The App
 
