@@ -27,7 +27,7 @@ Create namespaces for client and server:
 -  `ns1` for server -> `kubectl create namespace ns1`
 -  `ns2` for client -> `kubectl create namespace ns2`
 
-Execute these commands to install the helm charts:
+Installation of the helm charts:
 
 ```
 helm install podloggerserver ./podlogger-server/helm
