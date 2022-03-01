@@ -1,0 +1,13 @@
+namespace: ns2
+
+service:
+  port: 8080
+  targetPort: 8080
+
+container:
+  image:
+    name: mmertdogann/podlogger-client
+    tag: "1.0"
+    pullPolicy: Always
+  port: 8080
+  command: ["/go/bin/podlogger-client"]

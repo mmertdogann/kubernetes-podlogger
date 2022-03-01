@@ -1,0 +1,10 @@
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  namespace: {{ .Values.namespace }}
+  name: {{ .Chart.Name }}-pod-watcher
+rules:
+  - apiGroups: [""] # "" indicates the core API group
+    resources:
+      - pods
+    verbs: ["watch"]

@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: {{ .Chart.Name }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: {{ .Chart.Name }}
+spec:
+  serviceAccountName: {{ .Chart.Name }}-service-account
+  containers:
+    - name: {{ .Chart.Name }}
+      image: "{{ .Values.container.image.name }}:{{ .Values.container.image.tag }}"
+      command: {{ .Values.container.command }}
+      args: ["-n=ns2", "-p=8080", "-u=podloggerserver-service.ns1.svc.cluster.local"]
+      ports:
+        - containerPort: {{ .Values.container.port }}
+      resources:
+        requests:
+          memory: "64Mi"
+          cpu: "10m"
+        limits:
+          memory: "128Mi"
+          cpu: "250m"

@@ -1,0 +1,5 @@
+PodLogger Server installed!
+
+Check your pod's logs:
+
+  kubectl logs -f -n "{{ .Values.namespace }}" -l "app={{ .Chart.Name }}"
