@@ -1,6 +1,6 @@
  # kubernetes-podlogger
 
-Two seperate golang app (client-server) to monitor kubernetes pods inside their namespaces and communicate with each other when pod events occur
+Two separate golang app (client-server) to monitor kubernetes pods inside their namespaces and communicate with each other when pod events occur
 
 ## Technologies
 
